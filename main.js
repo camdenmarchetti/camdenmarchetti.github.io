@@ -23,62 +23,6 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./src/app/app-page-contact/app-page-contact.component.html":
-/*!******************************************************************!*\
-  !*** ./src/app/app-page-contact/app-page-contact.component.html ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "  <div>\n    <h2>Contact page</h2>\n  </div>"
-
-/***/ }),
-
-/***/ "./src/app/app-page-contact/app-page-contact.component.scss":
-/*!******************************************************************!*\
-  !*** ./src/app/app-page-contact/app-page-contact.component.scss ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC1wYWdlLWNvbnRhY3QvYXBwLXBhZ2UtY29udGFjdC5jb21wb25lbnQuc2NzcyJ9 */"
-
-/***/ }),
-
-/***/ "./src/app/app-page-contact/app-page-contact.component.ts":
-/*!****************************************************************!*\
-  !*** ./src/app/app-page-contact/app-page-contact.component.ts ***!
-  \****************************************************************/
-/*! exports provided: AppPageContactComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppPageContactComponent", function() { return AppPageContactComponent; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-
-
-var AppPageContactComponent = /** @class */ (function () {
-    function AppPageContactComponent() {
-    }
-    AppPageContactComponent.prototype.ngOnInit = function () {
-    };
-    AppPageContactComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-app-page-contact',
-            template: __webpack_require__(/*! ./app-page-contact.component.html */ "./src/app/app-page-contact/app-page-contact.component.html"),
-            styles: [__webpack_require__(/*! ./app-page-contact.component.scss */ "./src/app/app-page-contact/app-page-contact.component.scss")]
-        }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
-    ], AppPageContactComponent);
-    return AppPageContactComponent;
-}());
-
-
-
-/***/ }),
-
 /***/ "./src/app/app-page-default/app-page-default.component.html":
 /*!******************************************************************!*\
   !*** ./src/app/app-page-default/app-page-default.component.html ***!
@@ -198,7 +142,7 @@ var AppPageExperienceComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <h1>:(&emsp;Let's try that again...</h1>\n    <br/>\n    <h3>Here are some things that you may be looking for:</h3>\n    <ul>\n      <li>Read about me</li>\n      <li>Explore my past projects and experiences</li>\n      <li>Send me an email</li>\n      <li>View my resume</li>\n      <li>Go back to where you were</li>\n    </ul>\n  </div>"
+module.exports = "<div class=\"errorBox\">\n  <table>\n    <tbody>\n      <tr>\n        <td rowspan=\"2\" class=\"errorFrown\">\n          :(\n        </td>\n        <td class=\"error404\">404</td>\n      </tr>\n      <tr>\n        <td class=\"errorText\">Page not found</td>\n      </tr>\n    </tbody>\n  </table>\n\n  <div class=\"errorButtons\">\n    <button mat-stroked-button color=\"primary\" onclick=\"history.back(-1)\">Go back</button>\n    <a mat-raised-button color=\"primary\" href=\"#\">Go to Home</a>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -209,7 +153,7 @@ module.exports = "<div>\n    <h1>:(&emsp;Let's try that again...</h1>\n    <br/>
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2FwcC1wYWdlLW5vdC1mb3VuZC9hcHAtcGFnZS1ub3QtZm91bmQuY29tcG9uZW50LnNjc3MifQ== */"
+module.exports = ".column {\n  float: left;\n  width: 50%; }\n\n.row:after {\n  content: \"\";\n  display: table;\n  clear: both; }\n\n.errorFrown {\n  font-size: 80px;\n  line-height: 64px;\n  margin-bottom: 64px;\n  padding-right: 10px; }\n\n.error404 {\n  font-size: 50px;\n  line-height: 40px;\n  margin-bottom: 40px;\n  text-align: right; }\n\n.errorText {\n  color: #777;\n  font-size: 24px;\n  line-height: 24px;\n  margin-bottom: 64px; }\n\n.errorBox {\n  top: 50%;\n  left: 50%;\n  margin-top: -100px;\n  margin-left: -140px;\n  color: #000;\n  font-family: Roboto, \"Helvetica Neue\", sans-serif;\n  font-weight: 300; }\n\n.errorButtons {\n  margin-top: 40px; }\n\n.errorButtons a {\n  float: right; }\n\n.errorButtons a:hover {\n  background: #5A5C6C;\n  color: #fff; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9jYW1kZW5tYXJjaGV0dGkvRG9jdW1lbnRzL2RldmVsb3BtZW50L2NtYXJjaGV0dGkvc3JjL2FwcC9hcHAtcGFnZS1ub3QtZm91bmQvYXBwLXBhZ2Utbm90LWZvdW5kLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLFVBQVUsRUFBQTs7QUFHWjtFQUNFLFdBQVc7RUFDWCxjQUFjO0VBQ2QsV0FBVyxFQUFBOztBQUdiO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixtQkFBbUI7RUFDbkIsbUJBQW1CLEVBQUE7O0FBR3JCO0VBQ0UsZUFBZTtFQUNmLGlCQUFpQjtFQUNqQixtQkFBbUI7RUFDbkIsaUJBQWlCLEVBQUE7O0FBR25CO0VBQ0UsV0FBVztFQUNYLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsbUJBQW1CLEVBQUE7O0FBR3JCO0VBQ0UsUUFBUTtFQUNSLFNBQVM7RUFDVCxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxpREFBaUQ7RUFDakQsZ0JBQWdCLEVBQUE7O0FBR2xCO0VBQ0UsZ0JBQWdCLEVBQUE7O0FBR2xCO0VBQ0UsWUFBWSxFQUFBOztBQUdkO0VBQ0UsbUJBQW1CO0VBQ25CLFdBQVcsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2FwcC1wYWdlLW5vdC1mb3VuZC9hcHAtcGFnZS1ub3QtZm91bmQuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29sdW1uIHtcbiAgZmxvYXQ6IGxlZnQ7XG4gIHdpZHRoOiA1MCU7XG59XG5cbi5yb3c6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBkaXNwbGF5OiB0YWJsZTtcbiAgY2xlYXI6IGJvdGg7XG59XG5cbi5lcnJvckZyb3duIHtcbiAgZm9udC1zaXplOiA4MHB4O1xuICBsaW5lLWhlaWdodDogNjRweDtcbiAgbWFyZ2luLWJvdHRvbTogNjRweDtcbiAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cblxuLmVycm9yNDA0IHtcbiAgZm9udC1zaXplOiA1MHB4O1xuICBsaW5lLWhlaWdodDogNDBweDtcbiAgbWFyZ2luLWJvdHRvbTogNDBweDtcbiAgdGV4dC1hbGlnbjogcmlnaHQ7XG59XG5cbi5lcnJvclRleHQge1xuICBjb2xvcjogIzc3NztcbiAgZm9udC1zaXplOiAyNHB4O1xuICBsaW5lLWhlaWdodDogMjRweDtcbiAgbWFyZ2luLWJvdHRvbTogNjRweDtcbn1cblxuLmVycm9yQm94IHtcbiAgdG9wOiA1MCU7XG4gIGxlZnQ6IDUwJTtcbiAgbWFyZ2luLXRvcDogLTEwMHB4O1xuICBtYXJnaW4tbGVmdDogLTE0MHB4O1xuICBjb2xvcjogIzAwMDtcbiAgZm9udC1mYW1pbHk6IFJvYm90bywgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogMzAwO1xufVxuXG4uZXJyb3JCdXR0b25zIHtcbiAgbWFyZ2luLXRvcDogNDBweDtcbn1cblxuLmVycm9yQnV0dG9ucyBhIHtcbiAgZmxvYXQ6IHJpZ2h0O1xufVxuXG4uZXJyb3JCdXR0b25zIGE6aG92ZXIge1xuICBiYWNrZ3JvdW5kOiAjNUE1QzZDO1xuICBjb2xvcjogI2ZmZjtcbn1cbiJdfQ== */"
 
 /***/ }),
 
@@ -254,7 +198,7 @@ var AppPageNotFoundComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n    <h2>Projects page</h2>\n  </div>"
+module.exports = "<div>\n  <h3>Selected Render: {{projName}}</h3>\n  <p>{{projDesc}}</p>\n\n  <canvas id=\"gl-canvas\" width=\"500\" height=\"500\">\n    Oops ... your browser doesn't support the HTML5 canvas element\n  </canvas>\n</div>"
 
 /***/ }),
 
@@ -281,20 +225,61 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppPageProjectsComponent", function() { return AppPageProjectsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 var AppPageProjectsComponent = /** @class */ (function () {
-    function AppPageProjectsComponent() {
+    function AppPageProjectsComponent(route) {
+        this.route = route;
+        this.descriptions = {
+            "webgl_a1": {
+                name: "Intro to WebGL 2D",
+                desc: "Initial, introductory WebGL assignment - I was provided a white square and had to modify the code to create a red pentagon. This was recreated using the libraries I wrote through the course when uploaded to this site.",
+            },
+            "webgl_a2": {
+                name: "Multiple Static 2D",
+                desc: "Second assignment: rendering multiple shapes on the same canvas. Unlike the first assignment, all (non-translation/conversion) code was written from scratch. This was recreated using the libraries I wrote through the course when uploaded to this site.",
+            },
+            "webgl_a3": {
+                name: "Intro to WebGL 3D",
+                desc: "First steps into 3D modeling using WebGL. This rainbow cube, translations possible using the buttons to the right of the canvas, represents my first 3D WebGL scene. There is no lighting or texture mapping.",
+            },
+            "webgl_a4": {
+                name: "Triangle Mesh Generation",
+                desc: "Delving further into 3D WebGL renders. This model is generated by parsing an SMF input file and creating a triangle mesh, colored using the normal of each triangle's face. WebGL has a 2^16 -1 limit on indices, so large meshes are first chunked.",
+            },
+            "webgl_a5": {
+                name: "Lighting",
+                desc: "Initial work with WebGL lighting. Both Phong and Gouraud lighting are available for this render, as well as a directed/undirected light source.",
+            },
+        };
     }
     AppPageProjectsComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.routeSubscription = this.route.params.subscribe(function (params) {
+            _this.projID = params["projectID"];
+            _this.projName = _this.descriptions[params["projectID"]].name;
+            _this.projDesc = _this.descriptions[params["projectID"]].desc;
+            if (params["projectID"] == "webgl_a1")
+                createCanvas1();
+            else if (params["projectID"] == "webgl_a2")
+                createCanvas2();
+            else if (params["projectID"] == "webgl_a3")
+                createCanvas3();
+            else if (params["projectID"] == "webgl_a4")
+                createCanvas4();
+            else if (params["projectID"] == "webgl_a5")
+                createCanvas5();
+        });
     };
     AppPageProjectsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-app-page-projects',
+            selector: "app-app-page-projects",
             template: __webpack_require__(/*! ./app-page-projects.component.html */ "./src/app/app-page-projects/app-page-projects.component.html"),
             styles: [__webpack_require__(/*! ./app-page-projects.component.scss */ "./src/app/app-page-projects/app-page-projects.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]])
     ], AppPageProjectsComponent);
     return AppPageProjectsComponent;
 }());
@@ -430,28 +415,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
 /* harmony import */ var _app_page_default_app_page_default_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app-page-default/app-page-default.component */ "./src/app/app-page-default/app-page-default.component.ts");
 /* harmony import */ var _app_page_not_found_app_page_not_found_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./app-page-not-found/app-page-not-found.component */ "./src/app/app-page-not-found/app-page-not-found.component.ts");
-/* harmony import */ var _app_page_contact_app_page_contact_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-page-contact/app-page-contact.component */ "./src/app/app-page-contact/app-page-contact.component.ts");
-/* harmony import */ var _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-page-experience/app-page-experience.component */ "./src/app/app-page-experience/app-page-experience.component.ts");
-/* harmony import */ var _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-page-projects/app-page-projects.component */ "./src/app/app-page-projects/app-page-projects.component.ts");
-/* harmony import */ var _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-page-resume/app-page-resume.component */ "./src/app/app-page-resume/app-page-resume.component.ts");
-/* harmony import */ var _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-page-skills/app-page-skills.component */ "./src/app/app-page-skills/app-page-skills.component.ts");
+/* harmony import */ var _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app-page-experience/app-page-experience.component */ "./src/app/app-page-experience/app-page-experience.component.ts");
+/* harmony import */ var _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-page-projects/app-page-projects.component */ "./src/app/app-page-projects/app-page-projects.component.ts");
+/* harmony import */ var _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-page-resume/app-page-resume.component */ "./src/app/app-page-resume/app-page-resume.component.ts");
+/* harmony import */ var _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app-page-skills/app-page-skills.component */ "./src/app/app-page-skills/app-page-skills.component.ts");
 
 
 
 
 
-
+// import { AppPageContactComponent } from "./app-page-contact/app-page-contact.component";
 
 
 
 
 var routes = [
     { path: "", component: _app_page_default_app_page_default_component__WEBPACK_IMPORTED_MODULE_3__["AppPageDefaultComponent"] },
-    { path: "contact", component: _app_page_contact_app_page_contact_component__WEBPACK_IMPORTED_MODULE_5__["AppPageContactComponent"] },
-    { path: "experience", component: _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_6__["AppPageExperienceComponent"] },
-    { path: "projects", component: _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_7__["AppPageProjectsComponent"] },
-    { path: "resume", component: _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_8__["AppPageResumeComponent"] },
-    { path: "skills", component: _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_9__["AppPageSkillsComponent"] },
+    // { path: "contact", component: AppPageContactComponent },
+    { path: "experience", component: _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_5__["AppPageExperienceComponent"] },
+    { path: "projects/:projectID", component: _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_6__["AppPageProjectsComponent"] },
+    { path: "resume", component: _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_7__["AppPageResumeComponent"] },
+    { path: "skills", component: _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_8__["AppPageSkillsComponent"] },
     { path: "**", component: _app_page_not_found_app_page_not_found_component__WEBPACK_IMPORTED_MODULE_4__["AppPageNotFoundComponent"] }
 ];
 var AppRoutingModule = /** @class */ (function () {
@@ -477,7 +461,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<mat-sidenav-container>\n\n  <mat-sidenav #sidenav mode=\"over\" class=\"app-sidenav\" color=\"primary\">\n    <mat-toolbar>\n      <mat-toolbar-row *ngFor=\"let nav of navItems | slice:1\">\n        <a mat-button class=\"app-sidebar-button\" routerLink=\"{{nav.target}}\">{{nav.label}}</a>\n      </mat-toolbar-row>\n      <mat-toolbar-row>\n        <a download mat-button class=\"app-sidebar-button\" href=\"../../res/resume.pdf\">Download Resume</a>\n    </mat-toolbar-row>\n    </mat-toolbar>\n  </mat-sidenav>\n\n  <mat-toolbar color=\"primary\" id=\"app-toolbar-container\">\n    <mat-toolbar-row class=\"app-toolbar-small\">\n      <button mat-button class=\"app-menu-button\" (click)=\"sidenav.toggle()\">\n        <i class=\"material-icons\">menu</i>\n      </button>\n      <button mat-button class=\"app-menu-button\" (click)=\"gotoView('')\">\n        Camden Marchetti\n      </button>\n    </mat-toolbar-row>\n    <mat-toolbar-row class=\"app-toolbar-large\">\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between end\">\n        <a mat-button class=\"app-menu-button\" routerLink=\"\">\n          <h3>Camden Marchetti</h3>\n        </a>\n        <a *ngFor=\"let nav of navItems | slice:1:-1\" mat-button class=\"app-menu-button\" routerLink=\"{{nav.target}}\">{{nav.label}}</a>\n        <span class=\"horiz-filler\"></span>\n        <a mat-button class=\"app-menu-button\" routerLink=\"resume\">Resume</a>\n        <a download mat-icon-button id=\"resume_download\" href=\"../../res/resume.pdf\">\n          <mat-icon class=\"app-menu-button\">cloud_download</mat-icon>\n        </a>\n      </div>\n    </mat-toolbar-row>\n  </mat-toolbar>\n\n  <div class=\"app-content\">\n    <router-outlet class=\"hidden-router\"></router-outlet>\n  </div>\n</mat-sidenav-container>\n"
+module.exports = "<mat-sidenav-container>\n\n  <mat-sidenav #sidenav mode=\"over\" class=\"app-sidenav\" color=\"primary\">\n    <mat-toolbar>\n      <mat-toolbar-row *ngFor=\"let nav of navItems | slice:1\">\n        <a mat-button class=\"app-sidebar-button\" routerLink=\"{{nav.target}}\">{{nav.label}}</a>\n      </mat-toolbar-row>\n\n      <mat-toolbar-row *ngFor=\"let proj of toplevelProjectItems\">\n          <a mat-button class=\"app-sidebar-button\" routerLink=\"{{proj.target}}\">{{proj.name}}</a>\n      </mat-toolbar-row>\n\n      <mat-toolbar-row *ngFor=\"let proj of webglProjectItems\">\n          <a mat-button class=\"app-sidebar-button\" routerLink=\"{{proj.target}}\">{{proj.name}}</a>\n      </mat-toolbar-row>\n\n      <mat-toolbar-row>\n        <a download mat-button class=\"app-sidebar-button\" href=\"./assets/resume.pdf\">Download Resume</a>\n      </mat-toolbar-row>\n    </mat-toolbar>\n  </mat-sidenav>\n\n  <mat-toolbar color=\"primary\" id=\"app-toolbar-container\">\n    <mat-toolbar-row class=\"app-toolbar-small\">\n      <button mat-button class=\"app-menu-button\" (click)=\"sidenav.toggle()\">\n        <i class=\"material-icons\">menu</i>\n      </button>\n      <button mat-button class=\"app-menu-button\" (click)=\"gotoView('')\">\n        Camden Marchetti\n      </button>\n    </mat-toolbar-row>\n    <mat-toolbar-row class=\"app-toolbar-large\">\n      <div fxLayout=\"row\" fxLayoutAlign=\"space-between end\">\n        <a mat-button class=\"app-menu-button\" routerLink=\"\">\n          <h3>Camden Marchetti</h3>\n        </a>\n        <a *ngFor=\"let nav of navItems | slice:1:-1\" mat-button class=\"app-menu-button\" routerLink=\"{{nav.target}}\">{{nav.label}}</a>\n\n        <a mat-button class=\"app-menu-button\" [matMenuTriggerFor]=\"projects\">Projects<mat-icon>arrow_drop_down</mat-icon></a>\n        <mat-menu #projects=\"matMenu\">\n          <button mat-menu-item [matMenuTriggerFor]=\"webglProjects\">WebGL Projects</button>\n          <button mat-menu-item *ngFor=\"let proj of toplevelProjectItems\" routerLink=\"{{proj.target}}\">{{proj.name}}</button>\n        </mat-menu>\n        <mat-menu #webglProjects=\"matMenu\">\n          <button mat-menu-item *ngFor=\"let proj of webglProjectItems\" routerLink=\"{{proj.target}}\">{{proj.name}}</button>\n        </mat-menu>\n\n        <span class=\"horiz-filler\"></span>\n        <a mat-button class=\"app-menu-button\" routerLink=\"resume\">Resume</a>\n        <a download mat-icon-button id=\"resume_download\" href=\"../assets/resume.pdf\">\n          <mat-icon class=\"app-menu-button\">cloud_download</mat-icon>\n        </a>\n      </div>\n    </mat-toolbar-row>\n  </mat-toolbar>\n\n  <div class=\"app-content\">\n    <router-outlet class=\"hidden-router\"></router-outlet>\n  </div>\n</mat-sidenav-container>\n"
 
 /***/ }),
 
@@ -514,10 +498,18 @@ var AppComponent = /** @class */ (function () {
         this.navItems = [
             { label: "Camden Marchetti", target: "" },
             { label: "Work Experience", target: "experience" },
-            { label: "Projects", target: "projects" },
             { label: "Skills", target: "skills" },
-            { label: "Contact", target: "contact" },
             { label: "Resume", target: "resume" },
+        ];
+        this.toplevelProjectItems = [
+            { name: "Java Applet?", target: "projects#applet_name" }
+        ];
+        this.webglProjectItems = [
+            { name: "Intro to WebGL 2D", target: "projects/webgl_a1" },
+            { name: "Multiple Static 2D", target: "projects/webgl_a2" },
+            { name: "Intro to WebGL 3D", target: "projects/webgl_a3" },
+            { name: "Triangle Mesh Generation", target: "projects/webgl_a4" },
+            { name: "Lighting", target: "projects/webgl_a5" },
         ];
     }
     AppComponent.prototype.gotoView = function (url, id) {
@@ -638,13 +630,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_material_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.material.module */ "./src/app/app.material.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _app_page_contact_app_page_contact_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-page-contact/app-page-contact.component */ "./src/app/app-page-contact/app-page-contact.component.ts");
-/* harmony import */ var _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-page-resume/app-page-resume.component */ "./src/app/app-page-resume/app-page-resume.component.ts");
-/* harmony import */ var _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-page-skills/app-page-skills.component */ "./src/app/app-page-skills/app-page-skills.component.ts");
-/* harmony import */ var _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app-page-experience/app-page-experience.component */ "./src/app/app-page-experience/app-page-experience.component.ts");
-/* harmony import */ var _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app-page-projects/app-page-projects.component */ "./src/app/app-page-projects/app-page-projects.component.ts");
-/* harmony import */ var _app_page_not_found_app_page_not_found_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app-page-not-found/app-page-not-found.component */ "./src/app/app-page-not-found/app-page-not-found.component.ts");
-/* harmony import */ var _app_page_default_app_page_default_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./app-page-default/app-page-default.component */ "./src/app/app-page-default/app-page-default.component.ts");
+/* harmony import */ var _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-page-resume/app-page-resume.component */ "./src/app/app-page-resume/app-page-resume.component.ts");
+/* harmony import */ var _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app-page-skills/app-page-skills.component */ "./src/app/app-page-skills/app-page-skills.component.ts");
+/* harmony import */ var _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-page-experience/app-page-experience.component */ "./src/app/app-page-experience/app-page-experience.component.ts");
+/* harmony import */ var _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./app-page-projects/app-page-projects.component */ "./src/app/app-page-projects/app-page-projects.component.ts");
+/* harmony import */ var _app_page_not_found_app_page_not_found_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app-page-not-found/app-page-not-found.component */ "./src/app/app-page-not-found/app-page-not-found.component.ts");
+/* harmony import */ var _app_page_default_app_page_default_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app-page-default/app-page-default.component */ "./src/app/app-page-default/app-page-default.component.ts");
 
 
 
@@ -655,7 +646,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+// import { AppPageContactComponent } from './app-page-contact/app-page-contact.component';
 
 
 
@@ -675,7 +666,16 @@ var AppModule = /** @class */ (function () {
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_9__["AppRoutingModule"],
                 _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__["FlexLayoutModule"]
             ],
-            declarations: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"], _app_page_contact_app_page_contact_component__WEBPACK_IMPORTED_MODULE_10__["AppPageContactComponent"], _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_11__["AppPageResumeComponent"], _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_12__["AppPageSkillsComponent"], _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_13__["AppPageExperienceComponent"], _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_14__["AppPageProjectsComponent"], _app_page_not_found_app_page_not_found_component__WEBPACK_IMPORTED_MODULE_15__["AppPageNotFoundComponent"], _app_page_default_app_page_default_component__WEBPACK_IMPORTED_MODULE_16__["AppPageDefaultComponent"]],
+            declarations: [
+                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+                //AppPageContactComponent, 
+                _app_page_resume_app_page_resume_component__WEBPACK_IMPORTED_MODULE_10__["AppPageResumeComponent"],
+                _app_page_skills_app_page_skills_component__WEBPACK_IMPORTED_MODULE_11__["AppPageSkillsComponent"],
+                _app_page_experience_app_page_experience_component__WEBPACK_IMPORTED_MODULE_12__["AppPageExperienceComponent"],
+                _app_page_projects_app_page_projects_component__WEBPACK_IMPORTED_MODULE_13__["AppPageProjectsComponent"],
+                _app_page_not_found_app_page_not_found_component__WEBPACK_IMPORTED_MODULE_14__["AppPageNotFoundComponent"],
+                _app_page_default_app_page_default_component__WEBPACK_IMPORTED_MODULE_15__["AppPageDefaultComponent"]
+            ],
             entryComponents: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
         })

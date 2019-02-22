@@ -1,0 +1,21 @@
+attribute vec4 vPosition;
+attribute vec4 vNormal;
+
+uniform mat4 uModel;
+uniform mat3 uNormal;
+uniform mat4 uProject;
+uniform vec4 uLightPos;
+
+varying vec3 fNorm;
+varying vec3 fEye;
+varying vec3 fLight;
+
+void main()
+{
+    vec4 pos = uModel * vPosition;
+    gl_Position = uProject * pos;
+
+    fNorm = normalize(uNormal * vNormal.xyz);
+    fEye = normalize(pos).xyz;
+    fLight = normalize(uLightPos - pos * (uLightPos.w == 0.0 ? 0.0 : 1.0)).xyz;
+}

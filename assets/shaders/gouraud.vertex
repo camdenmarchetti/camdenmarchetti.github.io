@@ -1,0 +1,37 @@
+attribute vec4 vPosition;
+attribute vec4 vNormal;
+
+varying vec4 fColor;
+
+uniform mat4 uModel;
+uniform mat3 uNormal;
+uniform mat4 uProject;
+uniform vec4 uLightPos;
+uniform float uShiny;
+
+uniform vec4 uMaterialAmbient;
+uniform vec4 uMaterialDiffuse;
+uniform vec4 uMaterialSpecular;
+
+uniform vec4 uLightAmbient;
+uniform vec4 uLightDiffuse;
+uniform vec4 uLightSpecular;
+
+void main() {
+    vec4 uAmbient = uMaterialAmbient * uLightAmbient;
+    vec4 uDiffuse = uMaterialDiffuse * uLightDiffuse;
+    vec4 uSpecular = uMaterialSpecular * uLightSpecular;
+    vec4 position = uModel * vPosition;
+    
+    vec3 light = normalize(uLightPos - position * (uLightPos.w == 0.0 ? 0.0 : 1.0)).xyz;
+    vec3 norm = normalize(uNormal * vNormal.xyz);
+
+    gl_Position = uProject * position;
+    vec4 tempColor = uAmbient + max(dot(light, norm), 0.0) * uDiffuse;
+
+    if (dot(light, norm) >= 0.0 ) {
+      tempColor += pow(max(dot(norm, normalize(light - normalize(position).xyz)), 0.0), uShiny) * uSpecular;
+    } 
+
+    fColor = vec4(tempColor.xyz, 1.0);
+}
